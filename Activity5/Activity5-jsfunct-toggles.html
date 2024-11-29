@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #toggleText {
+            font-size: 18px;
+            font-weight: normal;
+            display: inline;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <button onclick="toggleVisibility()">Click Me!</button>
+    <p id="toggleText">Good afternoon everyone!</p>
+</div>
+
+<script>
+    function toggleVisibility() {
+        const text = document.getElementById("toggleText");
+
+        if (text.style.display === "none") {
+            text.style.display = "inline";
+        } else {
+            text.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
