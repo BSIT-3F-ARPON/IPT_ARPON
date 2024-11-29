@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #colorText {
+            font-size: 24px;
+            font-weight: normal;
+            display: inline;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <button onclick="changeColor()">Click this button</button>
+    <p id="colorText">Wennilyn Arpon</p>
+</div>
+
+<script>
+    let colorIndex = 0;
+
+    function changeColor() {
+        const text = document.getElementById("colorText");
+
+        if (colorIndex === 0) {
+            text.style.color = "red";
+            colorIndex++;
+        } else {
+            if (colorIndex === 1) {
+                text.style.color = "black";
+                colorIndex++;
+            } else {
+                if (colorIndex === 2) {
+                    text.style.color = "green";
+                    colorIndex++;
+                } else {
+                    if (colorIndex === 3) {
+                        text.style.color = "blue";
+                        colorIndex = 0;
+                    }
+                }
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
